@@ -1,0 +1,9 @@
+.error {
+  background: red; }
+
+.loading {
+  background: yellow; }
+
+.page {
+  background: red;
+  color: white; }
