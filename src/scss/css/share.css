@@ -1,0 +1,23 @@
+.share {
+  width: 80%;
+  margin: 0 auto; }
+  .share .share-help {
+    font-size: 2rem; }
+  .share .share-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .share .share-buttons .share-button {
+      width: 10rem;
+      border: 1px solid #FFFFFF;
+      padding: .5rem 1rem;
+      border-radius: 3px;
+      cursor: pointer; }
+      .share .share-buttons .share-button:hover {
+        background: #332A7B;
+        border: transparent; }
+      .share .share-buttons .share-button.disabled {
+        pointer-events: none; }
+    .share .share-buttons a {
+      text-decoration: none;
+      color: #FFFFFF; }

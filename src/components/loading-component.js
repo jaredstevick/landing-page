@@ -4,7 +4,7 @@ class LoadingComponent extends React.Component {
   render() {
 
     return (
-      <div className="error">
+      <div className="loading">
         <h1>Loading...</h1>
       </div>
     );

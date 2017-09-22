@@ -2,6 +2,7 @@ import React from 'react';
 import ErrorComponent from '../components/error-component';
 import LoadingComponent from '../components/loading-component';
 import MediaComponent from '../components/media-component';
+import ShareButtons from '../components/share-buttons';
 import { getData } from '../util/api-util';
 
 class PhotoPage extends React.Component {
@@ -45,17 +46,21 @@ class PhotoPage extends React.Component {
     }
 
     return (
-      <div className=" page -photo">
-        <h1>Photo Page</h1>
+      <div className="page photo">
+        <div className="mountains"></div>
+        <div className="content">
           {!error ? (
             <div>
-              <p>{this.state.id}</p>
-              <p>{user.first}, here is your {user.imgUrl ? 'photo' : 'video'}</p>
+              <p className="photo-text">
+                Thanks {user.first}! Enjoy your {user.imgUrl ? 'photo' : 'video'}.
+              </p>
               <MediaComponent user={user} />
+              <ShareButtons user={user} />
             </div>
           ) : (
-            <ErrorComponent />
+            <ErrorComponent {...this.props} />
           )}
+        </div>
       </div>
     );
   }

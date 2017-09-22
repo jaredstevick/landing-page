@@ -1,0 +1,16 @@
+.error {
+  .error-message {
+    width: 70%;
+    margin: 2rem auto;
+    font-size: 2.5rem;
+  }
+  .error-button {
+    color: white;
+    background: #332A7B;
+    width: 6rem;
+    margin: 0 auto;
+    padding: .75rem .5rem;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}

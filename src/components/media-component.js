@@ -7,6 +7,8 @@ class MediaComponent extends React.Component {
     const Video = () => (
       <div className="video-container">
         <iframe
+          width="640"
+          height="360"
           className="video-frame"
           src={`https://www.youtube.com/embed/${user.videoId}?autoplay=1`}
           allowFullScreen

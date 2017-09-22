@@ -1,4 +1,6 @@
-@import 'error';
-@import 'loading';
-@import 'media';
-@import 'page';
+@import './pages/page';
+@import './components/components';
+
+body {
+  margin: 0;
+}
